@@ -1,12 +1,12 @@
 const gifStages = [
-    "https://media.tenor.com/xWOf4oMi6bcAAAAM/hello-kitty.gif",             // 0 normal
-    "https://media.tenor.com/t31UVRxaNd8AAAAM/what-confused.gif",          // 1 confused
-    "https://media.tenor.com/nueVbeeVoPYAAAAM/hello-kitty-sanrio.gif",     // 2 pleading
-    "https://media.tenor.com/juw5d4u91skAAAAM/pipinpon.gif",                // 3 sad
-    "https://media.tenor.com/oCfCf7EB9Z0AAAAM/hello-kitty-crying.gif",      // 4 sadder
-    "https://media.tenor.com/z2Sfm7MoYQEAAAAM/hello-kitty-crying.gif",      // 5 devastated
-    "https://media.tenor.com/HgZfem0BfU4AAAAM/hellokitty-kkyugifs.gif",     // 6 very devastated
-    "https://media.tenor.com/o3E1Ws8DrFIAAAAM/crying-tears.gif"             // 7 crying runaway
+    "https://media.tenor.com/52CU9gXszE4AAAAM/huna04.gif",                 // 0 normal (cute)
+    "https://media.tenor.com/D5nGysR7ibMAAAAM/hello-kitty-huh.gif",         // 1 confused
+    "https://media.tenor.com/3srdprhUuh8AAAAM/pretty-please-hello-kitty.gif", // 2 pleading
+    "https://media.tenor.com/TXOqUuN9R5UAAAAM/rainy-day-hello-kitty.gif",   // 3 sad
+    "https://media.tenor.com/gB0L5l4vXrAAAAAM/meow-cry.gif",                // 4 sadder
+    "https://media.tenor.com/QbRj1k1UJP8AAAAM/hello-kitty-crying-sadness.gif", // 5 devastated
+    "https://media.tenor.com/oef6ZVUR3sAAAAAM/heart-hello-kitty.gif",       // 6 very devastated
+    "https://media.tenor.com/hGIPnWfyHZkAAAAM/goodbye-forever-run-away.gif" // 7 crying runaway
 ]
 
 const noMessages = [
@@ -48,7 +48,7 @@ music.play().then(() => {
     // Fallback: unmute on first interaction
     document.addEventListener('click', () => {
         music.muted = false
-        music.play().catch(() => {})
+        music.play().catch(() => { })
     }, { once: true })
 })
 
